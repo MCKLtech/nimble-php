@@ -138,7 +138,6 @@ class NimbleClient
      */
     public function post($endpoint, $json)
     {
-
         $response = $this->sendRequest('POST', self::NIMBLE_API_URL."/v$this->version/$endpoint", $json);
 
         return $this->handleResponse($response);
@@ -154,6 +153,7 @@ class NimbleClient
     public function put($endpoint, $json)
     {
         $response = $this->sendRequest('PUT', self::NIMBLE_API_URL."/v$this->version/$endpoint", $json);
+
         return $this->handleResponse($response);
     }
 
@@ -167,6 +167,7 @@ class NimbleClient
     public function delete($endpoint, $json = [])
     {
         $response = $this->sendRequest('DELETE', self::NIMBLE_API_URL."/v$this->version/$endpoint", $json);
+
         return $this->handleResponse($response);
     }
 
@@ -297,6 +298,5 @@ class NimbleClient
                 : null,
         ];
     }
-
 
 }

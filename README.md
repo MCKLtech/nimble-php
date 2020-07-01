@@ -61,6 +61,7 @@ All endpoints follow a similar mechanism to the examples show above. Again, plea
 - Contacts
 - Users
 - Company
+- Tasks
 
 ## Exceptions
 

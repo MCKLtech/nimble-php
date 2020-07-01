@@ -46,8 +46,6 @@ class NimbleContacts extends NimbleResource
     {
         $options = array_merge($options, ['record_type' => 'person']);
 
-        \Log::info(json_encode($options));
-
         return $this->client->post('contact', $options);
     }
 
